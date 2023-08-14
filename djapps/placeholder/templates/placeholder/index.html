@@ -1,0 +1,16 @@
+{% extends 'base_placeholder.html' %}
+{% block content %}
+<ul>
+    {% for user in userinfo %}
+        <div class="userinfo">
+            <ul>
+                <li>{{ user.id }}</li>
+                <li>{{ user.user }}</li>
+                <li>{{ user.email }}</li>
+                <li>{{ user.address }}</li>
+            </ul>
+        </div>
+
+    {% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+
+    <link rel="stylesheet" href="{% static 'polls/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'polls/css/form.css' %}">
+</head>
+<body>
+
+    {% include "polls/include/navbar.html" %}`
+
+    {% include "polls/include/message.html" %}
+
+    <div id="row">
+        <div id="left">
+            {% block left %}{% endblock left %}
+        </div>
+        <div id="content">
+            {% block content %}{% endblock content %}
+        </div>
+        <div id="right">
+            {% block right %}{% endblock right %}
+        </div>
+    </div>
+
+
+    <script src="{% static 'polls/js/base.js' %}"></script>
+    
+</body>
+</html>

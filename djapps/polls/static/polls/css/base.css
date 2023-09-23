@@ -1,0 +1,162 @@
+:root {
+    --navbar-background: rgb(173, 173, 173);
+    --navbar-color: rgb(39, 45, 49);
+    --navbar-link-background: rgb(39, 45, 49);
+    --navbar-link-hover: rgb(28, 32, 34);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 0; */
+    /* outline: 0; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: rgb(245, 245, 245); */
+    
+}
+
+
+#navbar-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--navbar-background);
+    color: var(--navbar-color);
+}
+
+
+#navbar-bottom > #left, 
+#navbar-bottom > #right {
+    background-color: inherit;
+    color: inherit;
+}
+
+#navbar-bottom > #left > a, 
+#navbar-bottom > #right > a  {
+    /* background-color: inherit;
+    color: inherit; */
+}
+
+#navbar-bottom > #left > div,
+#navbar-bottom > #right > div {
+    background-color: inherit;
+    color: inherit;
+}
+
+#navbar-bottom > #left > div > a,
+#navbar-bottom > #right > div > a {
+    /* background-color: inherit;
+    color: inherit; */
+}
+
+.navbar-link {
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 15px;
+    margin: 4px 9px;
+    padding: 10px 20px;
+    color: var(--navbar-background);
+    background-color: var(--navbar-link-background);
+}
+
+.navbar-link:hover {
+    background-color: var(--navbar-link-hover);
+}
+
+
+/* 
+    ROW
+*/
+#row {
+    display: flex;
+    /* height: 100vh; */
+    margin-bottom: 50px;
+}
+#row > #left, #row > #right {
+    width: 20%;
+}
+#row > #content {
+    width: 60%;
+}
+/* #row > #left, #content, #right {
+    margin-top: 10px;
+} */
+
+/* 
+    ROW CENTER
+*/
+#content {
+    background-color: aliceblue;
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    border-left: 1px solid darkgrey;
+    border-right: 1px solid darkgrey;
+}
+
+#content > * {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+/* #content > *:nth-child(odd) {
+    background-color: rgb(226, 226, 226);
+} */
+
+#content > ul {
+    padding: 10px 60px;
+}
+
+#content > h1, h2, h3, h4, h5, h6 {
+    padding-top: 20px;
+    background-color: rgb(226, 226, 226);
+}
+
+#content > p, ul, div {
+    font-size: 20px;
+}
+
+
+/* 
+    MESSAGES
+*/
+
+#message-container {
+    position: absolute;
+    top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: tomato;
+    color: whitesmoke;
+}
+
+.section {
+    background-color: inherit;
+    color: inherit;
+}
+
+#message {
+    background-color: inherit;
+    color: inherit;
+}
+
+#close {
+    background-color: inherit;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#close > h1, h2, h3, h4, h5, h6, button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}

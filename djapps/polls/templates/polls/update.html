@@ -1,0 +1,58 @@
+{% extends 'base_polls.html' %}
+
+{% block title %}
+    {% if title %} {{ title }} {% else %} Polls Update {% endif %}
+{% endblock title %}
+
+{% block content %}
+
+
+
+    <div></div>
+
+    <div>
+        <form method="POST" action="{% url 'polls:update_question' question.id %}">
+            {% csrf_token %}
+            <fieldset>
+            <legend>Your Question</legend>
+        
+            <label for="question{{ question.id }}">Question</label><br />
+            <input type="text" id="" name="question{{ question.id }}" value="{{ question.question_text }}" placeholder="Question..." />
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Choices</legend>
+
+                {% if question.choices.all|length == 0 %}
+                    {% for choice in iterator %}
+                        <label for="choice{{ forloop.counter }}">Choice {{ forloop.counter }}</label><br />
+                        <input type="text" id="" name="choice{{ forloop.counter }}" value="" placeholder="Choice {{ forloop.counter }}" />
+                    {% endfor %}
+
+                {% else %}
+                    {% for choice in question.choices.all %}
+                        <label for="choice{{ forloop.counter }}">Choice {{ forloop.counter }}</label><br />
+                        <input type="text" id="" name="choice{{ forloop.counter }}" value="{{ choice }}" placeholder="Choice {{ forloop.counter }}" />
+                    {% endfor %}
+
+                {% endif %} 
+            
+                
+            </fieldset>
+            
+            <input type="submit" value="Update">
+        </form>
+        
+    </div>
+
+
+    <div>
+        <hr>
+        <a href="{% url 'polls:index' %}">Home</a>
+        
+    </div>
+
+
+
+{% endblock content %}

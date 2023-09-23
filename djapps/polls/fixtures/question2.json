@@ -1,0 +1,114 @@
+[
+  {
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "What is you favourite character in One Piece?",
+      "pub_date": "2023-08-22T16:35:03.987Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+      "question_text": "What is your favourite anime villan?",
+      "pub_date": "2023-08-23T03:42:08.057Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "question_text": "What is your favourite movie?",
+      "pub_date": "2023-08-23T12:53:57.887Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 4,
+    "fields": {
+      "question_text": "Which is your favorite character in Ben10?",
+      "pub_date": "2023-08-23T15:23:09.236Z"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": { "question": 1, "choice_text": "Luffy", "votes": 1 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": { "question": 1, "choice_text": "Zoro", "votes": 1 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 3,
+    "fields": { "question": 1, "choice_text": "Nami", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 4,
+    "fields": { "question": 1, "choice_text": "Hancock", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 13,
+    "fields": { "question": 2, "choice_text": "Madara", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 14,
+    "fields": { "question": 2, "choice_text": "Itachi", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 15,
+    "fields": { "question": 2, "choice_text": "Kaguya Otsusuki", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 16,
+    "fields": { "question": 2, "choice_text": "Momoshiki", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 33,
+    "fields": { "question": 3, "choice_text": "Godfather", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 34,
+    "fields": { "question": 3, "choice_text": "Intersteller", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 35,
+    "fields": { "question": 3, "choice_text": "The dark knight ", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 36,
+    "fields": { "question": 3, "choice_text": "The Shutter Island", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 37,
+    "fields": { "question": 4, "choice_text": "Azmuth", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 38,
+    "fields": { "question": 4, "choice_text": "Ben Tennyson", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 39,
+    "fields": { "question": 4, "choice_text": "Gwen Tennyson", "votes": 0 }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 40,
+    "fields": { "question": 4, "choice_text": "Kevin E Eleven", "votes": 0 }
+  }
+]

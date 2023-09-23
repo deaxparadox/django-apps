@@ -1,0 +1,49 @@
+{% extends 'base_polls.html' %}
+
+{% block content %}
+
+
+<div>
+    <form method="POST" action="{% url 'polls:create_question' %}">
+        {% csrf_token %}
+        <fieldset>
+          <legend>Your Question</legend>
+      
+          {% comment %} <label for="question">Question</label><br /> {% endcomment %}
+          <input type="text" id="" name="question" value="" placeholder="Question please..." />
+          
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Choices</legend>
+        
+            {% comment %} <label for="choice1">Choice 1</label> {% endcomment %}
+            <input type="text" id="" name="choice1" value="" placeholder="Choice 1" />
+            <br />
+
+            {% comment %} <label for="choice2">Choice 2</label> {% endcomment %}
+            <input type="text" id="" name="choice2" value="" placeholder="Choice 2" />
+            <br />
+
+            {% comment %} <label for="choice3">Choice 3</label> {% endcomment %}
+            <input type="text" id="" name="choice3" value="" placeholder="Choice 3" />
+            <br />
+
+            {% comment %} <label for="choice4">Choice 4</label> {% endcomment %}
+            <input type="text" id="" name="choice4" value="" placeholder="Choice 4" />
+            <br />
+          </fieldset>
+          
+        <input type="submit" value="Create">
+    </form>
+      
+</div>
+
+
+<div>
+    <hr>
+    <a href="{% url 'polls:index' %}">Home</a>
+    
+</div>
+
+{% endblock content %}

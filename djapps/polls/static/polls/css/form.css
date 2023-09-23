@@ -1,0 +1,41 @@
+form {
+    /* width: 100%; */
+}
+
+form > fieldset {
+    /* width: 100%; */
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset > legend {
+    padding: 0px 10px;
+}
+
+form > input {
+    width: 100%;
+}
+
+fieldset > input {
+    width: 95%;
+}
+
+form > input,
+fieldset > input {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+
+/* css input element with type=radio attribute selector */
+input[type=radio] {
+    width: fit-content;
+}
+
+/* css input element with type=submit attribute selector */
+input[type=submit] {
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+<div id="message-container">
+    {% if messages %}
+        <div class="section" id="message">
+                <ul class="messages">
+                    {% for message in messages %}
+                    <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>
+                        <h3>
+                            {{ message }}
+                        </h3>
+                    </li>
+                    {% endfor %}
+                </ul>
+            
+        </div>
+        <div class="section" id="close">
+            <button id="message-close">&Cross;</button>
+        </div>
+    {% endif %}
+</div>
